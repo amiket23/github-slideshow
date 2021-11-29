@@ -16,3 +16,9 @@ jobs:
       - name: 'Check Java Version'
         run: |
           java --version
+      - name: 'Download Agent'
+        run: |
+          curl -LJO https://github.com/whitesource/unified-agent-distribution/releases/latest/download/wss-unified-agent.jar
+      - name: 'List directory'
+        run: |
+          ls -a
